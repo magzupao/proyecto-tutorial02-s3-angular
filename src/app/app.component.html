@@ -481,4 +481,11 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<router-outlet></router-outlet>
+<router-outlet>
+  <div>
+    <label>
+      <input type="file" name="fileUpload" (change)="onFileSelect($event)" />
+    </label>
+  </div>
+</router-outlet>
+
